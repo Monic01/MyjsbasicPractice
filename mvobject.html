@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .btn_box{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .movie_box {
+            margin-top: 10px;
+            width: 300px;
+            height: auto;
+            border: 2px solid   rgb(240, 159, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="btn_box">
+        <button onclick="movie_info1()" class="movie_btn1">어벤져스</button>
+        <button onclick="movie_info2()" class="movie_btn2">아이언맨</button>
+        <button onclick="movie_info3()" class="movie_btn3">블랙팬서</button>
+    </div>
+    <div class="movie_box">
+        <h1 class="movie_title" id="movie_title"></h1>
+        <ul>
+            <li class="movie_year" id="movie_year"></li>
+            <li class="movie_genre" id="movie_genre"></li>
+        </ul>
+    </div>
+    <script src="mvobject.js"></script>
+</body>
+</html>

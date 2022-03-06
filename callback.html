@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .callback_box {
+            width: 500px;
+            height: 700px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(32, 32, 32);
+        }
+        .name{
+            height: auto;
+            color: aliceblue;
+            margin-bottom: 100px;
+            font-size: 40px;
+        }
+        .calling>button {
+            width: auto;
+            min-width: 150px;
+
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 30px;
+            background-color: green;
+            color: azure;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        .ing {
+            margin-top: 10px;
+            color: white;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="callback_box">
+        <div class="name" id="name"></div>
+        <div class="calling">
+            <button onclick="calling()" id="call">전화 걸기</button>
+        </div>
+        <div class="ing" id="doing">전화중...</div>
+    </div>
+    <script src="callback.js"></script>
+</body>
+</html>
